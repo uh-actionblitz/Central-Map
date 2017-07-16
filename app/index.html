@@ -4,11 +4,28 @@
   <title>My index</title>
   <!-- inject:css -->
   <link rel="stylesheet" href="/stylesheets/vendor/leaflet/leaflet.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+  <link rel="stylesheet" href="/stylesheets/vendor/font-awesome/css/font-awesome.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+  <link rel="stylesheet" href="/stylesheets/vendor/font-awesome/css/font-awesome.min.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
   <link rel="stylesheet" href="/stylesheets/styles.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
   <!-- endinject -->
 </head>
 <body>
   <div id="map">
+  </div>
+  <div id='form-area'>
+    <form>
+      <input type='text' id="address" autocomplete="off"/>
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <div id='search-results'>
+        <ul></ul>
+      </div>
+    </form>
+    <div id='senator-info'>
+    </div>
+    <div id='stories-container'>
+      <ul id='stories-list'>
+      </ul>
+    </div>
   </div>
   <!-- inject:js -->
   <script src="/javascript/vendor/jquery.min.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>

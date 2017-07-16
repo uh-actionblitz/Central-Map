@@ -10,9 +10,13 @@ class App {
     var mapFetch = $.getJSON('/data/nys-senatemap.json');
     var senatorStatusFetch = $.getJSON('/data/status.json');
     var stateSenatorsInfo = $.getJSON('/data/state-senators.json');
+    var storiesInfo = $.getJSON('/data/stories.json');
 
-    $.when(mapFetch, senatorStatusFetch, stateSenatorsInfo).then((geojson, statusData, contact)=>{
-      this.Map = new MapManager(geojson[0], statusData[0], contact[0]);
+    $.when(mapFetch, senatorStatusFetch, stateSenatorsInfo, storiesInfo).then(
+      (geojson, statusData, contact, stories)=>{
+      this.Map = new MapManager(geojson[0], statusData[0], contact[0], stories[0]);
+      this.List = new ListManager(geojson[0], statusData[0], contact[0], stories[0]);
+      this.Search = new SearchManager();
     });
 
 
