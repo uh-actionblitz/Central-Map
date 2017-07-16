@@ -1,0 +1,57 @@
+.senator-popup .leaflet-popup-tip-container {
+  margin-top: -1px;
+}
+
+
+.senator-popup {
+  padding: 0.85rem;
+  width: 320px;
+}
+
+.senator-popup .leaflet-popup-content:after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.senator-image-container {
+  float: left;
+  margin-right: 1rem;
+  width: 100px;
+}
+
+.senator-image-container img {
+  width: 100%;
+}
+
+.senator-info {
+  font-size: .875rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.senator-info .votes-no {
+  color: red;
+}
+
+.senator-info .votes-yes {
+  color: black;
+  font-weight: bold;
+}
+
+.contact-button, .contact-link {
+  background-color: #1274b9;
+  border: 0;
+  border-radius: 4px;
+  clear: both;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  font-size: .875rem;
+  text-transform: uppercase;
+  width: 100%;
+  color: white !important;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}

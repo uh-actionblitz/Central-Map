@@ -1,0 +1,21 @@
+@import 'partials/reset';
+@import 'partials/grid';
+
+html, body {
+  padding : 0;
+  margin: 0;
+  height: 100%;
+  body: 100%;
+}
+body{
+  background-color: blue;
+  margin: 0;
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+@import 'partials/popup';

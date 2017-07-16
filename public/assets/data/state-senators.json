@@ -1,0 +1,443 @@
+[
+  {
+    "district": 1,
+    "name": "Kenneth P. LaValle",
+    "contact": "http://www.nysenate.gov/senators/kenneth-p-lavalle/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/lavalle.jpg?itok=lqlJF1U-",
+    "party": "R"
+  },
+  {
+    "district": 2,
+    "name": "John J. Flanagan",
+    "contact": "http://www.nysenate.gov/senators/john-j-flanagan/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/square.2015.senator%20flanagan%20headshot.jpg?itok=GU6jEu3I",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 3,
+    "name": "Thomas D. Croci",
+    "contact": "http://www.nysenate.gov/senators/thomas-d-croci/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2811-17-14%29%20Croci-030.jpg?itok=IETjEztE",
+    "party": "R"
+  },
+  {
+    "district": 4,
+    "name": "Phil Boyle",
+    "contact": "http://www.nysenate.gov/senators/phil-boyle/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/1366x1020-Boyle_0.jpg?itok=KDrU2fzr",
+    "party": "R"
+  },
+  {
+    "district": 5,
+    "name": "Carl L Marcellino",
+    "contact": "http://www.nysenate.gov/senators/carl-l-marcellino/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2801-30-07%29%20Marcellion-HS-29-Ret.jpg?itok=IUcSLb_j",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 6,
+    "name": "Kemp Hannon",
+    "contact": "http://www.nysenate.gov/senators/kemp-hannon/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/061912_albany_session568-1.jpg?itok=QExmsg1x",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 7,
+    "name": "Elaine Phillips",
+    "contact": "http://www.nysenate.gov/senators/elaine-phillips/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/senator_elaine_phillips.jpg?itok=HFnLPcEc",
+    "party": "R"
+  },
+  {
+    "district": 8,
+    "name": "John E. Brooks",
+    "contact": "http://www.nysenate.gov/senators/john-e-brooks/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/6ffe26e4aa4b5d1c18dd89018aaf6297.jpg?itok=Rr1Li075",
+    "party": "D"
+  },
+  {
+    "district": 9,
+    "name": "Todd Kaminsky",
+    "contact": "http://www.nysenate.gov/senators/todd-kaminsky/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/tk-newheadshot.jpg?itok=Egd8bOpE",
+    "party": "D"
+  },
+  {
+    "district": 10,
+    "name": "James Sanders Jr.",
+    "contact": "http://www.nysenate.gov/senators/james-sanders-jr/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2812-10-12%29%20Sanders-HS-010.jpg?itok=C6aFck7O",
+    "party": "D"
+  },
+  {
+    "district": 11,
+    "name": "Tony Avella",
+    "contact": "http://www.nysenate.gov/senators/tony-avella/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/avella_picture.jpg?itok=0PKpAHkO",
+    "party": "D, IP"
+  },
+  {
+    "district": 12,
+    "name": "Michael Gianaris",
+    "contact": "http://www.nysenate.gov/senators/michael-gianaris/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2801-05-11%29%20%20Gianaris-HS-020.jpg?itok=58PTMn0m",
+    "party": "D"
+  },
+  {
+    "district": 13,
+    "name": "Jose Peralta",
+    "contact": "http://www.nysenate.gov/senators/jose-peralta/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/760x377-Peralta_1.jpg?itok=piruqTRQ",
+    "party": "D, WF"
+  },
+  {
+    "district": 14,
+    "name": "Leroy Comrie",
+    "contact": "http://www.nysenate.gov/senators/leroy-comrie/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2801-12-15%29%20Comrie-HS-079.jpg?itok=jDSnGnNI",
+    "party": "D"
+  },
+  {
+    "district": 15,
+    "name": "Joseph P. Addabbo Jr",
+    "contact": "http://www.nysenate.gov/senators/joseph-p-addabbo-jr/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2802-11-13%29%20Addabbo-HS-051_0.jpg?itok=1LPpTXH6",
+    "party": "D"
+  },
+  {
+    "district": 16,
+    "name": "Toby Ann Stavisky",
+    "contact": "http://www.nysenate.gov/senators/toby-ann-stavisky/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2802-09-09%29%20Stavisky-HS-034-ret.jpg?itok=qAQeW4pv",
+    "party": "D"
+  },
+  {
+    "district": 17,
+    "name": "Simcha Felder",
+    "contact": "http://www.nysenate.gov/senators/simcha-felder/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2812-11-12%29%20Felder-HS-012.jpg?itok=7Ko2HjHh",
+    "party": "D"
+  },
+  {
+    "district": 18,
+    "name": "Martin Malavé Dilan",
+    "contact": "http://www.nysenate.gov/senators/martin-malave-dilan/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2805-16-12%29%20Dilan-HS-010.jpg?itok=CtAxmUJ7",
+    "party": "D"
+  },
+  {
+    "district": 19,
+    "name": "Roxanne J. Persaud",
+    "contact": "http://www.nysenate.gov/senators/roxanne-j-persaud/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/11-30-15_persaud-hs-013_0.jpg?itok=hzTS8H5T",
+    "party": "D"
+  },
+  {
+    "district": 20,
+    "name": "Jesse Hamilton",
+    "contact": "http://www.nysenate.gov/senators/jesse-hamilton/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2801-07-15%29%20Hamilton-HS-0025rt.jpg?itok=YcDm9FFN",
+    "party": "D"
+  },
+  {
+    "district": 21,
+    "name": "Kevin S. Parker",
+    "contact": "http://www.nysenate.gov/senators/kevin-s-parker/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/03-12-15_500-32-0013.jpg?itok=jeBg0LG2",
+    "party": "D, WF"
+  },
+  {
+    "district": 22,
+    "name": "Martin J. Golden",
+    "contact": "http://www.nysenate.gov/senators/martin-j-golden/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2802-05-07%29%20Golden-HS-008.jpg?itok=ogFQvvld",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 23,
+    "name": "Diane J. Savino",
+    "contact": "http://www.nysenate.gov/senators/diane-j-savino/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/1366x1020-Savino_0.jpg?itok=_bIWY46s",
+    "party": "D, IP, WF"
+  },
+  {
+    "district": 24,
+    "name": "Andrew J Lanza",
+    "contact": "http://www.nysenate.gov/senators/andrew-j-lanza/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2801-23-07%29%20Lanza-HS-029-8x10.jpg?itok=cXRljsMa",
+    "party": "R"
+  },
+  {
+    "district": 25,
+    "name": "Velmanette Montgomery",
+    "contact": "http://www.nysenate.gov/senators/velmanette-montgomery/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/facebook_headshot_2_copy.png?itok=rUcqWlAX",
+    "party": "D"
+  },
+  {
+    "district": 26,
+    "name": "Daniel L. Squadron",
+    "contact": "http://www.nysenate.gov/senators/daniel-l-squadron/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/website_photo2.jpg?itok=ILt4tKbS",
+    "party": "D, WF"
+  },
+  {
+    "district": 27,
+    "name": "Brad Hoylman",
+    "contact": "http://www.nysenate.gov/senators/brad-hoylman/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/bh_headshot.jpg?itok=HaIgi279",
+    "party": "D, WF"
+  },
+  {
+    "district": 28,
+    "name": "Liz Krueger",
+    "contact": "http://www.nysenate.gov/senators/liz-krueger/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2803-05-09%29%20Liz%20Krueger8x10HS-002.jpg?itok=3Jk1A2QS",
+    "party": "D, WF"
+  },
+  {
+    "district": 29,
+    "name": "José M. Serrano",
+    "contact": "http://www.nysenate.gov/senators/jose-m-serrano/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2802-11-13%29%20Serrano-HS-028RET.jpg?itok=uqH5hbSa",
+    "party": "D, WF"
+  },
+  {
+    "district": 30,
+    "name": "Bill Perkins",
+    "contact": "http://www.nysenate.gov/senators/bill-perkins/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2802-05-09%29%20Perkins-HS-004.jpg?itok=mee9lUwO",
+    "party": "D, WF"
+  },
+  {
+    "district": 31,
+    "name": "Marisol Alcantara",
+    "contact": "http://www.nysenate.gov/senators/marisol-alcantara/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/marisol_alcantara.jpg?itok=NsyftGXk",
+    "party": "D"
+  },
+  {
+    "district": 32,
+    "name": "Ruben Diaz",
+    "contact": "http://www.nysenate.gov/senators/ruben-diaz/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/diazheadshotnolayerscroplores.jpg?itok=wBqJh-ei",
+    "party": "D"
+  },
+  {
+    "district": 33,
+    "name": "Gustavo Rivera",
+    "contact": "http://www.nysenate.gov/senators/gustavo-rivera/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2801-29-14%29%20Rivera-HS-%20009.jpg?itok=C9Q_AhW1",
+    "party": "D, WF"
+  },
+  {
+    "district": 34,
+    "name": "Jeffrey D. Klein",
+    "contact": "http://www.nysenate.gov/senators/jeffrey-d-klein/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2802-04-13%29%20Klein-HS-001.jpg?itok=E7pDCrng",
+    "party": "D"
+  },
+  {
+    "district": 35,
+    "name": "Andrea Stewart-Cousins",
+    "contact": "http://www.nysenate.gov/senators/andrea-stewart-cousins/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/asc_headshot.jpg?itok=6c215OQi",
+    "party": "D, IP, WF"
+  },
+  {
+    "district": 36,
+    "name": "Jamaal Bailey",
+    "contact": "http://www.nysenate.gov/senators/jamaal-bailey/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/bailey-hs.jpg?itok=tnu6jIZO",
+    "party": "D"
+  },
+  {
+    "district": 37,
+    "name": "George Latimer",
+    "contact": "http://www.nysenate.gov/senators/george-latimer/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/gl_2.jpg?itok=-uO0ETEl",
+    "party": "D"
+  },
+  {
+    "district": 38,
+    "name": "David Carlucci",
+    "contact": "http://www.nysenate.gov/senators/david-carlucci/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2812-07-10%29%20Carlucci-HS-028.jpg?itok=r6MWzwrR",
+    "party": "D"
+  },
+  {
+    "district": 39,
+    "name": "William J. Larkin, Jr.",
+    "contact": "http://www.nysenate.gov/senators/william-j-larkin-jr/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2803-25-11%29%20Larkin-HS-020.jpg?itok=F6vuxdH-",
+    "party": "R, C"
+  },
+  {
+    "district": 40,
+    "name": "Terrence Murphy",
+    "contact": "http://www.nysenate.gov/senators/terrence-murphy/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/new_york_state_senator_terrence_p._murphy.jpg?itok=ElSviRUt",
+    "party": "R, C, G, IP, SC"
+  },
+  {
+    "district": 41,
+    "name": "Sue Serino",
+    "contact": "http://www.nysenate.gov/senators/sue-serino/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2811-17-14%29%20Serino-075.jpg?itok=N9fWozn4",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 42,
+    "name": "John J. Bonacic",
+    "contact": "http://www.nysenate.gov/senators/john-j-bonacic/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/760x377-Bonacic_0.jpg?itok=UIZpLp2J",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 43,
+    "name": "Kathleen A. Marchione",
+    "contact": "http://www.nysenate.gov/senators/kathleen-marchione/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2812-11-12%29%20Marchione-HS-015RET.jpg?itok=ZeEfpzO4",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 44,
+    "name": "Neil D. Breslin",
+    "contact": "http://www.nysenate.gov/senators/neil-d-breslin/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/07-20-11_breslin_-hs-032.jpg?itok=pQAaE17o",
+    "party": "D, IP, WF"
+  },
+  {
+    "district": 45,
+    "name": "Betty Little",
+    "contact": "http://www.nysenate.gov/senators/betty-little/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/24Little.jpg?itok=kdKQZsPC",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 46,
+    "name": "George A. Amedore, Jr.",
+    "contact": "http://www.nysenate.gov/senators/george-amedore-jr/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2811-17-14%29%20Amedore-045.jpg?itok=o18bikEC",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 47,
+    "name": "Joseph A. Griffo",
+    "contact": "http://www.nysenate.gov/senators/joseph-griffo/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2811-18-08%29%20Griffo-HS-020.jpg?itok=uAjbUe2F",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 48,
+    "name": "Patty Ritchie",
+    "contact": "http://www.nysenate.gov/senators/patty-ritchie/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2801-25-11%29%20Richie-HS-055.jpg?itok=qdCfWGcD",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 49,
+    "name": "James Tedisco",
+    "contact": "http://www.nysenate.gov/senators/james-tedisco/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/official_tedisco-hs.jpg?itok=tfsnmXHc",
+    "party": "R, C"
+  },
+  {
+    "district": 50,
+    "name": "John A. DeFrancisco",
+    "contact": "http://www.nysenate.gov/senators/john-defrancisco/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2801-14-13%29%20Defrancisco-HS-008.jpg?itok=eoJbdnr3",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 51,
+    "name": "James L. Seward",
+    "contact": "http://www.nysenate.gov/senators/james-l-seward/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2811-18-08%29%20Seward-HS-050.jpg?itok=lmurNftH",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 52,
+    "name": "Fred Akshar",
+    "contact": "http://www.nysenate.gov/senators/fred-akshar/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/official_akshar_headshot_-_fixed_2.jpg?itok=-CaLMEKo",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 53,
+    "name": "David J. Valesky",
+    "contact": "http://www.nysenate.gov/senators/david-j-valesky/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/official_head_shot_with_flag.jpg?itok=Pu_fpStk",
+    "party": "D, IP"
+  },
+  {
+    "district": 54,
+    "name": "Pamela Helming",
+    "contact": "http://www.nysenate.gov/senators/pamela-helming/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/01-03-17_helming-hs-018.jpg?itok=U3lZHfGd",
+    "party": "R"
+  },
+  {
+    "district": 55,
+    "name": "Rich Funke",
+    "contact": "http://www.nysenate.gov/senators/rich-funke/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2811-17-14%29%20Funke-015.jpg?itok=onVX5KQp",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 56,
+    "name": "Joseph E. Robach",
+    "contact": "http://www.nysenate.gov/senators/joseph-e-robach/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/senate_headshot.jpg?itok=0vxABuuV",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 57,
+    "name": "Catharine Young",
+    "contact": "http://www.nysenate.gov/senators/catharine-young/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/young%20headshot-ret.jpg?itok=MT3q_K-R",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 58,
+    "name": "Thomas F. O'Mara",
+    "contact": "http://www.nysenate.gov/senators/thomas-f-omara/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/02-10-15_official_hs_omara-hs-040.jpg?itok=U2FyZimr",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 59,
+    "name": "Patrick M. Gallivan",
+    "contact": "http://www.nysenate.gov/senators/patrick-m-gallivan/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/09-15-16_gallivan-hs-012a.jpg?itok=wI-u7V-i",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 60,
+    "name": "Chris Jacobs",
+    "contact": "http://www.nysenate.gov/senators/chris-jacobs/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/chris-jacobs.jpg?itok=jyWBxlnN",
+    "party": "R"
+  },
+  {
+    "district": 61,
+    "name": "Michael H. Ranzenhofer",
+    "contact": "http://www.nysenate.gov/senators/michael-h-ranzenhofer/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2801-26-09%29%20Ranzenhofer-HS-019.jpg?itok=zfur-3oO",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 62,
+    "name": "Robert G. Ortt",
+    "contact": "http://www.nysenate.gov/senators/robert-g-ortt/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2803-19-15%29%20Ortt-HS-057.jpg?itok=ovaldghH",
+    "party": "R, C, IP"
+  },
+  {
+    "district": 63,
+    "name": "Timothy M. Kennedy",
+    "contact": "http://www.nysenate.gov/senators/timothy-m-kennedy/contact",
+    "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2805-08-13%29%20Kennedy%20-HS-021.jpg?itok=CTJHgbSg",
+    "party": "D, IP, WF"
+  }
+]
