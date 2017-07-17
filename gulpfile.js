@@ -10,7 +10,8 @@ var gulp = require('gulp'),
     inject = require('gulp-inject'),
     hash = require('gulp-hash'),
     uglify = require('gulp-uglify'),
-    order = require('gulp-order');
+    order = require('gulp-order'),
+    s3   = require('gulp-s3')
 
 
 // If you want details of the error in the console
@@ -122,9 +123,12 @@ gulp.task('prepare-export', function() {
 
 gulp.task('export', function() {
   var AWS = {
-    "key":    process.env.AWS_ACCESS_KEY_ID,
-    "secret": process.env.AWS_SECRET_ACCESS_KEY,
-    "bucket": "dev.example.com",
-    "region": "eu-west-1"
+    "key":    process.env.AWS_ACCESS_KEY,
+    "secret": process.env.AWS_SECRET_KEY,
+    "bucket": process.env.AWS_BUCKET_NAME,
+    "region": process.env.AWS_REGION
   }
+
+  gulp.src('./dist/**').pipe(s3(AWS));
+
 })

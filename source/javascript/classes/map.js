@@ -143,7 +143,7 @@ class MapManager {
     const target = leafletPip.pointInLayer(latLng, this.districts, true)[0];
 
     if (target) {
-      this.map.fitBounds(target.getBounds());
+      this.map.fitBounds(target.getBounds(), { animate: false });
       this.districts.eachLayer(this._resetLayerStyle.bind(this));
       target.setStyle(this._chosenStyle())
       //Refresh whole map

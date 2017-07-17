@@ -56,7 +56,6 @@ html, body {
   position: relative; }
 
 body {
-  background-color: blue;
   margin: 0; }
   body #map {
     width: 100%;
