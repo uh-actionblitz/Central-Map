@@ -77,9 +77,9 @@ class MapManager {
 
       layer.on({
         click: (e)=>{
-          console.log("CLICKED ::: ", e.target);
-          this.map.fitBounds(layer.getBounds());
-
+          console.log("CLICKED ::: ", e);
+          // this.map.fitBounds(layer.getBounds());
+          window.location.hash = `#lat=${e.latlng.lat}&lon=${e.latlng.lng}`
         }
       })
 
@@ -93,11 +93,21 @@ class MapManager {
   _layerStyle() {
     return {
       fillColor: 'gray',
-      fillOpacity: 0.2,
+      fillOpacity: 0.01,
       color: 'gray',
       opacity: '1',
       weight: 1
     };
+  }
+  _chosenStyle() {
+    return {
+      fillColor: 'green',
+      fillOpacity: 0.5
+    }
+  }
+
+  _resetLayerStyle(layer) {
+    layer.setStyle(this._layerStyle());
   }
 
   _colorDistrict(district) {
@@ -126,5 +136,20 @@ class MapManager {
     this.districts.bringToBack();
 
     console.log(this.layers);
+  }
+
+  //FitBounds on the district
+  focusOnDistrict(latLng) {
+    const target = leafletPip.pointInLayer(latLng, this.districts, true)[0];
+
+    if (target) {
+      this.map.fitBounds(target.getBounds(), { animate: false });
+      this.districts.eachLayer(this._resetLayerStyle.bind(this));
+      target.setStyle(this._chosenStyle())
+      //Refresh whole map
+    }
+
+
+
   }
 }

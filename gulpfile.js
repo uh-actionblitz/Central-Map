@@ -10,7 +10,8 @@ var gulp = require('gulp'),
     inject = require('gulp-inject'),
     hash = require('gulp-hash'),
     uglify = require('gulp-uglify'),
-    order = require('gulp-order');
+    order = require('gulp-order'),
+    s3   = require('gulp-s3')
 
 
 // If you want details of the error in the console
@@ -83,6 +84,7 @@ gulp.task('inject', function () {
                           'public/assets/stylesheets/*.css'], {read: false})
                           .pipe(order([
                             'public/assets/javascript/vendor/jquery.min.js',
+                            'public/assets/javascript/vendor/leaflet.min.js',
                             'public/assets/javascript/**/*.js',
                             'public/assets/stylesheets/vendor/**/*.css',
                             'public/assets/javascript/*.js',
@@ -100,3 +102,33 @@ gulp.task('watch', function() {
   gulp.watch('source/scss/**/*.scss', ['build-css']);
   gulp.watch('source/**', ['inject']);
 });
+
+gulp.task('publish', ['build-css', 'build-js', 'inject', 'prepare-export', 'export']);
+gulp.task('prepare-export', function() {
+  gulp.src('app/index.html')
+    .pipe(gulp.dest('dist'));
+  gulp.src(['public/assets/javascript/**/*.js',
+            'public/assets/javascript/*.js'])
+      .pipe(gulp.dest('dist/javascript'));
+
+  gulp.src(['public/assets/stylesheets/**/*'])
+      .pipe(gulp.dest('dist/stylesheets'));
+
+  gulp.src(['public/assets/stylesheets/**/*'])
+      .pipe(gulp.dest('dist/stylesheets'));
+
+      gulp.src(['public/assets/data/**/*'])
+          .pipe(gulp.dest('dist/data'));
+});
+
+gulp.task('export', function() {
+  var AWS = {
+    "key":    process.env.AWS_ACCESS_KEY,
+    "secret": process.env.AWS_SECRET_KEY,
+    "bucket": process.env.AWS_BUCKET_NAME,
+    "region": process.env.AWS_REGION
+  }
+
+  gulp.src('./dist/**').pipe(s3(AWS));
+
+})

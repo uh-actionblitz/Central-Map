@@ -1,6 +1,58 @@
-div#form-area {
-  position: absolute;
-  top: 0;
-  z-index: 100;
-  left: 0;
+#form-area {
+    top: 15px;
+    left: 60px;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    border: solid #c5c5c5 1px;
+    border-radius: 4px;
+    width: 270px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px 0px;
+
+    i.fa-search {
+      font-size: 16px;
+      color: #a4a4a4;
+      position: absolute;
+      left: 17px;
+      top: 15px;
+    }
+
+    input#address {
+      outline: none;
+      font-size: 16px;
+      width: calc(100% - 27px);
+      padding-left: 24px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      position: relative;
+    }
+
+    sub {
+      color: gray;
+      font-style: italic;
+      display: block;
+      text-align: center;
+    }
+
+    #search-results {
+      margin-top: 10px;
+      li {
+        &:first-child {
+          border-top: 2px solid gray;
+          padding-top: 15px;
+        }
+        div {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 100%;
+          display: inline-block;
+          overflow: hidden;
+
+          a {
+            font-size: 11px;
+            color: $blue;
+          }
+        }
+      }
+    }
 }

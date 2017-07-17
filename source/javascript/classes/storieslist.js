@@ -8,7 +8,7 @@ class StoriesListManager {
     this.storiesList = $("#stories");
   }
 
-  onHashchange(options) {
-    console.log("StoriesListManager", options);
+  listNearbyStories(latLng) {
+    console.log("StoriesListManager", latLng);
   }
 }
