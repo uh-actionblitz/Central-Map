@@ -5,7 +5,7 @@ class MapManager {
     this.map = new L.map('map').setView([42.863,-74.752], 6.55);
     L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
       maxZoom: 18,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy;<a href="https://carto.com/attribution">CARTO</a>'
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy;<a href="https://carto.com/attribution">CARTO</a>. Interactivity by <a href="//actionblitz.org">ActionBlitz</a>'
     }).addTo(this.map);
 
 
@@ -75,6 +75,15 @@ class MapManager {
       }).addTo(this.map);
 
 
+      layer.on({
+        click: (e)=>{
+          console.log("CLICKED ::: ", e.target);
+          this.map.fitBounds(layer.getBounds());
+
+        }
+      })
+
+      layer._leaflet_id = feature.id
       // layer.on({
         // mouseover: handleMouseOver,
         // mouseout: handleMouseOut
@@ -83,9 +92,11 @@ class MapManager {
 
   _layerStyle() {
     return {
-      fillColor: 'none',
+      fillColor: 'gray',
+      fillOpacity: 0.2,
       color: 'gray',
-      opacity: '1'
+      opacity: '1',
+      weight: 1
     };
   }
 
@@ -107,9 +118,13 @@ class MapManager {
 
   render() {
     //Call geojson
-    L.geoJSON(this.geojson, {
+    this.districts = L.geoJSON(this.geojson, {
       style: this._layerStyle.bind(this),
       onEachFeature: this._onEachFeature.bind(this)
-    });
+    })
+    this.districts.addTo(this.map);
+    this.districts.bringToBack();
+
+    console.log(this.layers);
   }
 }

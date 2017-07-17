@@ -47,14 +47,16 @@ class SearchManager {
 
   render() {
     this.searchSuggestions.empty();
-    this.searchSuggestions.append(
-      this.data.slice(0,5).map((item)=>`
-      <li>
-        <div class='suggestion' lon="${item.lon}" lat="${item.lat}">
-          <a href='#lon=${item.lon}&lat=${item.lat}'>${item.display_name}</a>
-        </div>
-      </li>`)
-    );
+    if (this.data) {
+      this.searchSuggestions.append(
+        this.data.slice(0,5).map((item)=>`
+        <li>
+          <div class='suggestion' lon="${item.lon}" lat="${item.lat}">
+            <a href='#lon=${item.lon}&lat=${item.lat}'>${item.display_name}</a>
+          </div>
+        </li>`)
+      );
+    }
   }
 
 }

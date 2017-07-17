@@ -77,10 +77,17 @@ gulp.task('inject', function () {
 
   var target = gulp.src('source/html/index.html');
   // It's not necessary to read the files (will speed up things), we're only after their paths:
-  var sources = gulp.src(['public/assets/javascript/vendor/**/*.js',
-                          'public/assets/stylesheets/vendor/**/*.css',
+  var sources = gulp.src(['public/assets/javascript/**/*.js',
+                          'public/assets/stylesheets/**/*.css',
                           'public/assets/javascript/*.js',
                           'public/assets/stylesheets/*.css'], {read: false})
+                          .pipe(order([
+                            'public/assets/javascript/vendor/jquery.min.js',
+                            'public/assets/javascript/**/*.js',
+                            'public/assets/stylesheets/vendor/**/*.css',
+                            'public/assets/javascript/*.js',
+                            'public/assets/stylesheets/*.css'
+                          ], { base: './' }))
                       .pipe(hash(opts));
 
   return target.pipe(inject(sources, { ignorePath: 'public/assets' }))
