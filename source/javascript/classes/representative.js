@@ -12,8 +12,8 @@ class RepresentativeManager {
     this.representativeContainer = $("#senator-info");
   }
 
-  onHashchange(options) {
-    console.log("RepresentativeManager", options);
+  showRepresentative(latLng) {
+    console.log("RepresentativeManager", latLng);
   }
 
 }

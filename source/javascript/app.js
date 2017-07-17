@@ -29,12 +29,14 @@ class App {
       {
         const hash = $.deparam(window.location.hash.substring(1));
 
+        const latLng = new L.latLng(hash.lat, hash.lon);
         // Trigger various managers
-        this.StoryList.onHashchange(hash);
-        this.Rep.onHashchange(hash);
-
+        this.StoryList.listNearbyStories(latLng);
+        this.Rep.showRepresentative(latLng);
+        this.Map.focusOnDistrict(latLng)
       }
-    })
+    });
+    $(window).trigger("hashchange");
   }
 }
 
