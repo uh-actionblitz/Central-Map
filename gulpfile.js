@@ -101,3 +101,30 @@ gulp.task('watch', function() {
   gulp.watch('source/scss/**/*.scss', ['build-css']);
   gulp.watch('source/**', ['inject']);
 });
+
+gulp.task('publish', ['build-css', 'build-js', 'inject', 'prepare-export', 'export']);
+gulp.task('prepare-export', function() {
+  gulp.src('app/index.html')
+    .pipe(gulp.dest('dist'));
+  gulp.src(['public/assets/javascript/**/*.js',
+            'public/assets/javascript/*.js'])
+      .pipe(gulp.dest('dist/javascript'));
+
+  gulp.src(['public/assets/stylesheets/**/*'])
+      .pipe(gulp.dest('dist/stylesheets'));
+
+  gulp.src(['public/assets/stylesheets/**/*'])
+      .pipe(gulp.dest('dist/stylesheets'));
+
+      gulp.src(['public/assets/data/**/*'])
+          .pipe(gulp.dest('dist/data'));
+});
+
+gulp.task('export', function() {
+  var AWS = {
+    "key":    process.env.AWS_ACCESS_KEY_ID,
+    "secret": process.env.AWS_SECRET_ACCESS_KEY,
+    "bucket": "dev.example.com",
+    "region": "eu-west-1"
+  }
+})
