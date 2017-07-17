@@ -74,7 +74,7 @@
     "name": "Tony Avella",
     "contact": "http://www.nysenate.gov/senators/tony-avella/contact",
     "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/avella_picture.jpg?itok=0PKpAHkO",
-    "party": "D, IP"
+    "party": "D, IP, IDC"
   },
   {
     "district": 12,
@@ -88,7 +88,7 @@
     "name": "Jose Peralta",
     "contact": "http://www.nysenate.gov/senators/jose-peralta/contact",
     "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/760x377-Peralta_1.jpg?itok=piruqTRQ",
-    "party": "D, WF"
+    "party": "D, WF, IDC"
   },
   {
     "district": 14,
@@ -137,7 +137,7 @@
     "name": "Jesse Hamilton",
     "contact": "http://www.nysenate.gov/senators/jesse-hamilton/contact",
     "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2801-07-15%29%20Hamilton-HS-0025rt.jpg?itok=YcDm9FFN",
-    "party": "D"
+    "party": "D, IDC"
   },
   {
     "district": 21,
@@ -158,7 +158,7 @@
     "name": "Diane J. Savino",
     "contact": "http://www.nysenate.gov/senators/diane-j-savino/contact",
     "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/1366x1020-Savino_0.jpg?itok=_bIWY46s",
-    "party": "D, IP, WF"
+    "party": "D, IP, WF, IDC"
   },
   {
     "district": 24,
@@ -214,7 +214,7 @@
     "name": "Marisol Alcantara",
     "contact": "http://www.nysenate.gov/senators/marisol-alcantara/contact",
     "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/marisol_alcantara.jpg?itok=NsyftGXk",
-    "party": "D"
+    "party": "D, IDC"
   },
   {
     "district": 32,
@@ -235,7 +235,7 @@
     "name": "Jeffrey D. Klein",
     "contact": "http://www.nysenate.gov/senators/jeffrey-d-klein/contact",
     "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2802-04-13%29%20Klein-HS-001.jpg?itok=E7pDCrng",
-    "party": "D"
+    "party": "D, IDC"
   },
   {
     "district": 35,
@@ -263,7 +263,7 @@
     "name": "David Carlucci",
     "contact": "http://www.nysenate.gov/senators/david-carlucci/contact",
     "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2812-07-10%29%20Carlucci-HS-028.jpg?itok=r6MWzwrR",
-    "party": "D"
+    "party": "D, IDC"
   },
   {
     "district": 39,
@@ -368,7 +368,7 @@
     "name": "David J. Valesky",
     "contact": "http://www.nysenate.gov/senators/david-j-valesky/contact",
     "image": "https://www.nysenate.gov/sites/default/files/styles/160x160/public/official_head_shot_with_flag.jpg?itok=Pu_fpStk",
-    "party": "D, IP"
+    "party": "D, IP, IDC"
   },
   {
     "district": 54,

@@ -1,0 +1,20 @@
+.parties {
+
+  .party {
+    display: inline-block;
+    padding: 5px 6px;
+    border-radius: 40em;
+    font-family: sans-serif;
+    color: white;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+
+    &.D { background-color: #0172ce; }
+    &.IP { display: none; }
+    &.WF { display: none; }
+    &.R { background-color: #f1242b; }
+    &.IDC { background-color: #3D1255; }
+
+  }
+}
