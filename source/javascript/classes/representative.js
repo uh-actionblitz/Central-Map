@@ -10,6 +10,14 @@ class RepresentativeManager {
     this.contact = contact;
 
     this.representativeContainer = $("#senator-info");
+
+    //create listeners
+    this.addEvents();
+  }
+
+  addEvents() {
+    //Close
+    this.representativeContainer.on('click', "a.close", () => this.representativeContainer.empty());
   }
 
   showRepresentative(latLng) {
@@ -21,9 +29,7 @@ class RepresentativeManager {
 
   renderParties(parties) {
     const partyList = parties.split(',');
-
     const toString = partyList.map(i=>`<li class='party ${i}'><span>${i}</span></li>`).join('');
-
     return `<ul class='parties'>${toString}</ul>`;
   }
 
@@ -81,6 +87,7 @@ class RepresentativeManager {
     console.log(repToRender, contactOfRep);
     this.representativeContainer.html(
       `<div>
+        <a href="javascript: void(null)" class='close'><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
         <h5 class='your-senator'>Your State Senator</h5>
         <div class='basic-info'>
           <img src='${contactOfRep.image}' class='rep-pic' />

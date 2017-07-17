@@ -168,31 +168,39 @@ div#form-area {
   position: absolute;
   z-index: 100;
   right: 10px;
-  top: 10px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  border: solid #c5c5c5 1px;
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.2);
-  width: 330px; }
-  #senator-info .your-senator {
-    color: lightgray;
-    margin-bottom: 10px; }
-  #senator-info .basic-info .rep-pic {
-    width: 70px;
-    float: left;
-    margin-right: 10px; }
-  #senator-info .basic-info::after {
-    content: '';
-    display: block;
-    clear: both; }
-  #senator-info .action-area .not {
-    color: red; }
-  #senator-info .website a {
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    color: white;
-    background-color: #0172ce;
-    font-family: sans-serif; }
+  top: 10px; }
+  #senator-info > div {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: solid #c5c5c5 1px;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.2);
+    width: 330px; }
+    #senator-info > div .close {
+      position: absolute;
+      right: 10px;
+      font-size: 20px;
+      top: 10px;
+      color: gray; }
+    #senator-info > div .your-senator {
+      color: lightgray;
+      margin-bottom: 10px; }
+    #senator-info > div .basic-info .rep-pic {
+      width: 70px;
+      float: left;
+      margin-right: 10px; }
+    #senator-info > div .basic-info::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #senator-info > div .action-area .not {
+      color: red; }
+    #senator-info > div .website a {
+      text-align: center;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+      color: white;
+      background-color: #0172ce;
+      font-family: sans-serif; }

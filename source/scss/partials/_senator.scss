@@ -4,42 +4,53 @@
   right: 10px;
   top: 10px;
 
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  border: solid #c5c5c5 1px;
-  box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.2);
-  width: 330px;
-  .your-senator {
-    color: lightgray;
-    margin-bottom: 10px;
-  }
-  .basic-info {
-    .rep-pic {
-      width: 70px;
-      float: left;
-      margin-right: 10px
+  & > div {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: solid #c5c5c5 1px;
+    box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.2);
+    width: 330px;
+    .close {
+      position: absolute;
+      right: 10px;
+      font-size: 20px;
+      top: 10px;
+      color: gray;
     }
-
-    &::after {
-      content: '';
-      display: block;
-      clear: both;
+    
+    .your-senator {
+      color: lightgray;
+      margin-bottom: 10px;
     }
-  }
-  .action-area {
-    .not { color: red; }
-  }
-  .website {
-    a {
-      text-align: center;
-      text-decoration: none;
-      padding: 10px;
-      display: block;
-      color: white;
-      background-color: $blue;
+    .basic-info {
+      .rep-pic {
+        width: 70px;
+        float: left;
+        margin-right: 10px
+      }
 
-      font-family: $sans-serif;
+      &::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+    .action-area {
+      .not { color: red; }
+    }
+    .website {
+      a {
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        color: white;
+        background-color: $blue;
+
+        font-family: $sans-serif;
+      }
     }
   }
 }

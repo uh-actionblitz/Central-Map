@@ -77,9 +77,9 @@ class MapManager {
 
       layer.on({
         click: (e)=>{
-          console.log("CLICKED ::: ", e.target);
-          this.map.fitBounds(layer.getBounds());
-
+          console.log("CLICKED ::: ", e);
+          // this.map.fitBounds(layer.getBounds());
+          window.location.hash = `#lat=${e.latlng.lat}&lon=${e.latlng.lng}`
         }
       })
 
