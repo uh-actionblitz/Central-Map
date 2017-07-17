@@ -11,3 +11,7 @@ npm install --save-dev
 To run gulp:
 
     $ gulp
+
+Contact:
+
+* Rapi Castillo – rapi@progcode.org 

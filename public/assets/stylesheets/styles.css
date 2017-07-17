@@ -138,11 +138,44 @@ h5 {
   text-align: center;
   font-weight: bold; }
 
-div#form-area {
+#form-area {
+  top: 15px;
+  left: 60px;
   position: absolute;
-  top: 0;
-  z-index: 100;
-  left: 0; }
+  background: white;
+  padding: 10px;
+  border: solid #c5c5c5 1px;
+  border-radius: 4px;
+  width: 270px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px 0px; }
+  #form-area i.fa-search {
+    font-size: 16px;
+    color: #a4a4a4;
+    position: absolute;
+    left: 17px;
+    top: 15px; }
+  #form-area input#address {
+    outline: none;
+    font-size: 16px;
+    width: calc(100% - 27px);
+    padding-left: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: relative; }
+  #form-area #search-results {
+    margin-top: 10px; }
+    #form-area #search-results li:first-child {
+      border-top: 2px solid gray;
+      padding-top: 15px; }
+    #form-area #search-results li div {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+      display: inline-block;
+      overflow: hidden; }
+      #form-area #search-results li div a {
+        font-size: 11px;
+        color: #0172ce; }
 
 .parties .party {
   display: inline-block;
@@ -196,6 +229,18 @@ div#form-area {
       clear: both; }
     #senator-info > div .action-area .not {
       color: red; }
+    #senator-info > div .action-area sub {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 10px;
+      display: inline-block;
+      color: gray; }
+    #senator-info > div .action-area blockquote {
+      margin-left: 10px;
+      padding-lefT: 10px;
+      border-left: solid lightgray 5px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
     #senator-info > div .website a {
       text-align: center;
       text-decoration: none;
