@@ -27,6 +27,13 @@
       position: relative;
     }
 
+    sub {
+      color: gray;
+      font-style: italic;
+      display: block;
+      text-align: center;
+    }
+
     #search-results {
       margin-top: 10px;
       li {

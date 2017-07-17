@@ -38,6 +38,8 @@ class SearchManager {
       }, 500);
     })
 
+    this.target.find("form").on("submit", () =>{ return false; });
+
     //Listen to clicking of suggestions
     that.searchSuggestionsContainer.on("click", "a", (ev) => {
       console.log("Test");

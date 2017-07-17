@@ -162,6 +162,11 @@ h5 {
     padding-top: 4px;
     padding-bottom: 4px;
     position: relative; }
+  #form-area sub {
+    color: gray;
+    font-style: italic;
+    display: block;
+    text-align: center; }
   #form-area #search-results {
     margin-top: 10px; }
     #form-area #search-results li:first-child {
