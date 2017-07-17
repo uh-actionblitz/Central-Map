@@ -38,6 +38,8 @@ class SearchManager {
       }, 500);
     })
 
+    this.target.find("form").on("submit", () =>{ return false; });
+
     //Listen to clicking of suggestions
     that.searchSuggestionsContainer.on("click", "a", (ev) => {
       console.log("Test");
@@ -49,7 +51,7 @@ class SearchManager {
     this.searchSuggestions.empty();
     if (this.data) {
       this.searchSuggestions.append(
-        this.data.slice(0,5).map((item)=>`
+        this.data.slice(0,10).map((item)=>`
         <li>
           <div class='suggestion' lon="${item.lon}" lat="${item.lat}">
             <a href='#lon=${item.lon}&lat=${item.lat}'>${item.display_name}</a>
