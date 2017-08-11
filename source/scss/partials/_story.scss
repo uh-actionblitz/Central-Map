@@ -1,0 +1,47 @@
+.user-popup-content {
+  hr {
+      border-color: #333;
+  }
+  .user-info {
+    margin-bottom: 10px;
+
+    img.health-icon {
+      float: left;
+      margin-right: 5px;
+    }
+  }
+  .user-feature {
+    margin-top: 10px;
+  }
+  .user-image-container {
+
+    float: left;
+    width: 150px;
+    height: 100px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    div {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+    }
+    &.no-image {
+      display: none;
+    }
+  }
+
+  .user-video-container {
+    &.no-video {
+      display: none;
+    }
+  }
+
+  .user-story-text {
+    p { margin: 0; margin-bottom: 10px;}
+    &.no-text {
+      display: none;
+    }
+  }
+}

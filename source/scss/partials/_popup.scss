@@ -27,8 +27,6 @@
 
 .senator-info {
   font-size: .875rem;
-  margin-top: 1rem;
-  padding: 1rem;
 }
 .senator-info .votes-no {
   color: red;
@@ -54,4 +52,12 @@
   display: inline-block;
   text-align: center;
   font-weight: bold;
+}
+
+.senator-popup-content {
+  .senator-image-container {
+    float: left;
+    width: 90px;
+    img { width: 100%; }
+  }
 }

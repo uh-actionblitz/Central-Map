@@ -22,7 +22,7 @@ class RepresentativeManager {
 
   showRepresentative(latLng) {
     this.target = leafletPip.pointInLayer(latLng, this.map.districts, true)[0];
-    console.log("RepresentativeManager", this.target);
+
 
     this.render();
   }
@@ -84,7 +84,7 @@ class RepresentativeManager {
     const repToRender = this.status.filter(i=>i.district == districtNumber)[0];
     const contactOfRep = this.contact.filter(i=>i.district == districtNumber)[0];
 
-    console.log(repToRender, contactOfRep);
+
     this.representativeContainer.html(
       `<div>
         <a href="javascript: void(null)" class='close'><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
@@ -92,7 +92,7 @@ class RepresentativeManager {
         <div class='basic-info'>
           <img src='${contactOfRep.image}' class='rep-pic' />
           <h5>NY District ${repToRender.district}</h5>
-          <h3>${repToRender.name}</h3>
+          <h4>${repToRender.name}</h4>
           <p>${this.renderParties(contactOfRep.party)}</p>
         </div>
         <div class='action-area'>
