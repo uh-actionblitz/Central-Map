@@ -88,6 +88,47 @@ h4 {
 h5 {
   font-size: 14px; }
 
+#legend {
+  position: absolute;
+  bottom: 2px;
+  left: 0; }
+
+.user-popup-content hr {
+  border-color: #333; }
+
+.user-popup-content .user-info {
+  margin-bottom: 10px; }
+  .user-popup-content .user-info img.health-icon {
+    float: left;
+    margin-right: 5px; }
+
+.user-popup-content .user-feature {
+  margin-top: 10px; }
+
+.user-popup-content .user-image-container {
+  float: left;
+  width: 150px;
+  height: 100px;
+  margin-right: 5px;
+  margin-bottom: 5px; }
+  .user-popup-content .user-image-container div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center; }
+  .user-popup-content .user-image-container.no-image {
+    display: none; }
+
+.user-popup-content .user-video-container.no-video {
+  display: none; }
+
+.user-popup-content .user-story-text p {
+  margin: 0;
+  margin-bottom: 10px; }
+
+.user-popup-content .user-story-text.no-text {
+  display: none; }
+
 .senator-popup .leaflet-popup-tip-container {
   margin-top: -1px; }
 
@@ -110,9 +151,7 @@ h5 {
   width: 100%; }
 
 .senator-info {
-  font-size: .875rem;
-  margin-top: 1rem;
-  padding: 1rem; }
+  font-size: .875rem; }
 
 .senator-info .votes-no {
   color: red; }
@@ -136,6 +175,12 @@ h5 {
   display: inline-block;
   text-align: center;
   font-weight: bold; }
+
+.senator-popup-content .senator-image-container {
+  float: left;
+  width: 90px; }
+  .senator-popup-content .senator-image-container img {
+    width: 100%; }
 
 #form-area {
   top: 15px;
@@ -182,6 +227,7 @@ h5 {
         color: #0172ce; }
 
 .parties .party {
+  position: relative;
   display: inline-block;
   padding: 5px 6px;
   border-radius: 40em;
@@ -190,16 +236,34 @@ h5 {
   margin-right: 5px;
   font-size: 12px;
   font-weight: bold; }
-  .parties .party.D {
+  .parties .party.D::after {
     background-color: #0172ce; }
   .parties .party.IP {
     display: none; }
+  .parties .party.C, .parties .party.G, .parties .party.SC {
+    display: none; }
   .parties .party.WF {
     display: none; }
-  .parties .party.R {
+  .parties .party.R::after {
     background-color: #f1242b; }
-  .parties .party.IDC {
+  .parties .party.IDC::after {
     background-color: #3D1255; }
+  .parties .party > span {
+    position: relative;
+    z-index: 100; }
+  .parties .party::after {
+    content: ' ';
+    position: absolute;
+    padding-bottom: 0;
+    border-radius: 50%;
+    z-index: 0;
+    background-color: #3D1255;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
 
 #senator-info {
   position: absolute;

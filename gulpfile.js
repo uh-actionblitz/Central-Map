@@ -117,6 +117,9 @@ gulp.task('prepare-export', function() {
   gulp.src(['public/assets/stylesheets/**/*'])
       .pipe(gulp.dest('dist/stylesheets'));
 
+  gulp.src(['public/assets/images/**/*'])
+      .pipe(gulp.dest('dist/images'));
+
       gulp.src(['public/assets/data/**/*'])
           .pipe(gulp.dest('dist/data'));
 });
