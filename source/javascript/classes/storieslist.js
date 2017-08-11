@@ -9,6 +9,6 @@ class StoriesListManager {
   }
 
   listNearbyStories(latLng) {
-    console.log("StoriesListManager", latLng);
+    
   }
 }

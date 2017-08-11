@@ -50,7 +50,7 @@ var MapManager = function () {
     key: '_onEachFeature',
     value: function _onEachFeature(feature, layer) {
       //
-      // console.log(senators[feature.properties.NAME - 1].status)
+      //
       var that = this;
 
       var status = this.statusData[feature.properties.NAME - 1].status;
@@ -72,7 +72,7 @@ var MapManager = function () {
 
       layer.on({
         click: function click(e) {
-          console.log("CLICKED ::: ", e);
+
           // this.map.fitBounds(layer.getBounds());
           window.location.hash = '#lat=' + e.latlng.lat + '&lon=' + e.latlng.lng;
         }
@@ -136,7 +136,7 @@ var MapManager = function () {
       this.districts.addTo(this.map);
       this.districts.bringToBack();
 
-      console.log(this.layers);
+
     }
 
     //FitBounds on the district
@@ -195,7 +195,7 @@ var RepresentativeManager = function () {
     key: "showRepresentative",
     value: function showRepresentative(latLng) {
       this.target = leafletPip.pointInLayer(latLng, this.map.districts, true)[0];
-      console.log("RepresentativeManager", this.target);
+
 
       this.render();
     }
@@ -231,7 +231,7 @@ var RepresentativeManager = function () {
         return i.district == districtNumber;
       })[0];
 
-      console.log(repToRender, contactOfRep);
+
       this.representativeContainer.html("<div>\n        <a href=\"javascript: void(null)\" class='close'><i class=\"fa fa-times-circle-o\" aria-hidden=\"true\"></i></a>\n        <h5 class='your-senator'>Your State Senator</h5>\n        <div class='basic-info'>\n          <img src='" + contactOfRep.image + "' class='rep-pic' />\n          <h5>NY District " + repToRender.district + "</h5>\n          <h3>" + repToRender.name + "</h3>\n          <p>" + this.renderParties(contactOfRep.party) + "</p>\n        </div>\n        <div class='action-area'>\n          " + (repToRender.status === "FOR" ? this.renderThanks(repToRender) : this.renderUrge(repToRender)) + "\n        </div>\n        <div class='website'>\n          <a href='" + repToRender.contact + "' target='_blank'>More ways to contact <strong>Sen. " + repToRender.name + "</strong></a>\n        <div>\n       </div>");
     }
   }]);
@@ -294,7 +294,7 @@ var SearchManager = function () {
 
       //Listen to clicking of suggestions
       that.searchSuggestionsContainer.on("click", "a", function (ev) {
-        console.log("Test");
+
         that.searchSuggestionsContainer.hide();
       });
     }
@@ -333,7 +333,7 @@ var StoriesListManager = function () {
   _createClass(StoriesListManager, [{
     key: "listNearbyStories",
     value: function listNearbyStories(latLng) {
-      console.log("StoriesListManager", latLng);
+
     }
   }]);
 

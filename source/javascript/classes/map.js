@@ -1,5 +1,5 @@
 class MapManager {
-  constructor(geojson, statusData, contact) {
+  constructor(geojson, statusData, contact, stories) {
 
     //Initializing Map
     this.map = new L.map('map').setView([42.863,-74.752], 6.55);
@@ -12,6 +12,9 @@ class MapManager {
     this.statusData = statusData;
     this.geojson = geojson;
     this.contact = contact;
+    this.stories = stories;
+
+
 
     this.render();
   }
@@ -53,7 +56,7 @@ class MapManager {
 
   _onEachFeature(feature, layer) {
       //
-      // console.log(senators[feature.properties.NAME - 1].status)
+      //
       const that = this;
 
       var status = this.statusData[feature.properties.NAME - 1].status;
@@ -77,7 +80,7 @@ class MapManager {
 
       layer.on({
         click: (e)=>{
-          console.log("CLICKED ::: ", e);
+
           // this.map.fitBounds(layer.getBounds());
           window.location.hash = `#lat=${e.latlng.lat}&lon=${e.latlng.lng}`
         }
@@ -135,7 +138,7 @@ class MapManager {
     this.districts.addTo(this.map);
     this.districts.bringToBack();
 
-    console.log(this.layers);
+
   }
 
   //FitBounds on the district

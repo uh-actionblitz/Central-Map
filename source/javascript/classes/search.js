@@ -42,7 +42,7 @@ class SearchManager {
 
     //Listen to clicking of suggestions
     that.searchSuggestionsContainer.on("click", "a", (ev) => {
-      console.log("Test");
+
       that.searchSuggestionsContainer.hide();
     })
   }
