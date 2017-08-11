@@ -1,5 +1,13 @@
+const STORY_ICON = L.icon({
+    iconUrl: '/images/health.png',
+
+    iconSize:     [20, 20], // size of the icon
+    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
+});
+
 class MapManager {
-  constructor(geojson, statusData, contact) {
+  constructor(geojson, statusData, contact, stories) {
 
     //Initializing Map
     this.map = new L.map('map').setView([42.863,-74.752], 6.55);
@@ -12,6 +20,7 @@ class MapManager {
     this.statusData = statusData;
     this.geojson = geojson;
     this.contact = contact;
+    this.stories = stories;
 
     this.render();
   }
@@ -53,7 +62,7 @@ class MapManager {
 
   _onEachFeature(feature, layer) {
       //
-      // console.log(senators[feature.properties.NAME - 1].status)
+      //
       const that = this;
 
       var status = this.statusData[feature.properties.NAME - 1].status;
@@ -77,7 +86,7 @@ class MapManager {
 
       layer.on({
         click: (e)=>{
-          console.log("CLICKED ::: ", e);
+
           // this.map.fitBounds(layer.getBounds());
           window.location.hash = `#lat=${e.latlng.lat}&lon=${e.latlng.lng}`
         }
@@ -126,6 +135,45 @@ class MapManager {
     }
   }
 
+  _renderStory(event) {
+    var popup;
+    var story = event.target.options.story;
+
+    var content = (
+      `<div class='user-popup-content'>
+        <div class='user-info'>
+          <img src='/images/health.png' class='health-icon'/>
+          <h4>
+            ${story.Name}
+          </h4>
+          <h5>${story.Address}</h5>
+        </div>
+        <hr />
+        <div class='user-feature'>
+          <section class="user-image-container ${story.Image===''?'no-image':''}">
+            <div style="background-image: url(${story.Image})"/>
+          </section>
+          <section class='user-video-container ${story.Video===''?'no-video':''}'>
+            <iframe src="${story.Video}" width="320" height="215" scrolling="no" frameborder="0" allowfullscreen></iframe>
+          </section>
+          <section class="user-story-text ${story.Text === '' ? 'no-text' : ''}">
+            <p>${story.Text}</p>
+          </section>
+        </div>
+      </div>`);
+
+    popup = L.popup({
+      closeButton: true,
+      className: 'user-popup-item',
+     });
+
+    popup.setContent(content);
+    setTimeout(() => {
+      event.target.bindPopup(popup).openPopup();
+    }, 100)
+
+  }
+
   render() {
     //Call geojson
     this.districts = L.geoJSON(this.geojson, {
@@ -135,7 +183,19 @@ class MapManager {
     this.districts.addTo(this.map);
     this.districts.bringToBack();
 
-    console.log(this.layers);
+    //Add the stories
+
+
+
+    this.stories.forEach(item => {
+      // console.log(item, [item.Lat, item.Lon]);
+      L.marker(L.latLng(item.Lat, item.Lon), {icon: STORY_ICON, story: item})
+        .on({
+          click: this._renderStory.bind(this),
+        })
+        .addTo(this.map);
+    })
+
   }
 
   //FitBounds on the district
