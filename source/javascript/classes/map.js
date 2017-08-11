@@ -27,16 +27,16 @@ class MapManager {
     var moreInfo = event.target.options.contact;
 
     var content = (
-      `<div>
-        <section className="senator-image-container">
+      `<div class='senator-popup-content'>
+        <section class="senator-image-container">
           <img src="${senator.image}" />
         </section>
-        <section className="senator-info">
-          <div>${senator.name}</div>
+        <section class="senator-info">
+          <h4>${senator.name}</h4>
           <div>Party: ${moreInfo.party}</div>
           <div>Senate District ${senator.district}</div>
           <div class="${(senator.status === 'FOR') ? 'votes-yes' : 'votes-no'}">
-              ${senator.status === 'TARGET' ? 'High priority' : (senator.status === 'FOR') ? 'Co-Sponsor' : 'No support'}
+              ${senator.status === 'TARGET' ? 'High priority' : (senator.status === 'FOR') ? 'Co-Sponsor' : 'Not Yet Supportive'}
           </div>
         </section>
         <a href="${moreInfo.contact}" class="contact-link" target="_blank">Contact</button>
@@ -101,8 +101,8 @@ class MapManager {
   }
   _chosenStyle() {
     return {
-      fillColor: 'green',
-      fillOpacity: 0.5
+      fillColor: 'yellow',
+      fillOpacity: 0.1
     }
   }
 
@@ -115,7 +115,7 @@ class MapManager {
 
     switch(status) {
       case 'FOR':
-        return '#1e90ff';
+        return 'lightgreen';
         break;
       case 'AGAINST':
         return '#FF4C50';

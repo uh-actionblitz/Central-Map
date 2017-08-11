@@ -110,9 +110,7 @@ h5 {
   width: 100%; }
 
 .senator-info {
-  font-size: .875rem;
-  margin-top: 1rem;
-  padding: 1rem; }
+  font-size: .875rem; }
 
 .senator-info .votes-no {
   color: red; }
@@ -136,6 +134,12 @@ h5 {
   display: inline-block;
   text-align: center;
   font-weight: bold; }
+
+.senator-popup-content .senator-image-container {
+  float: left;
+  width: 90px; }
+  .senator-popup-content .senator-image-container img {
+    width: 100%; }
 
 #form-area {
   top: 15px;
@@ -182,6 +186,7 @@ h5 {
         color: #0172ce; }
 
 .parties .party {
+  position: relative;
   display: inline-block;
   padding: 5px 6px;
   border-radius: 40em;
@@ -190,16 +195,34 @@ h5 {
   margin-right: 5px;
   font-size: 12px;
   font-weight: bold; }
-  .parties .party.D {
+  .parties .party.D::after {
     background-color: #0172ce; }
   .parties .party.IP {
     display: none; }
+  .parties .party.C, .parties .party.G, .parties .party.SC {
+    display: none; }
   .parties .party.WF {
     display: none; }
-  .parties .party.R {
+  .parties .party.R::after {
     background-color: #f1242b; }
-  .parties .party.IDC {
+  .parties .party.IDC::after {
     background-color: #3D1255; }
+  .parties .party > span {
+    position: relative;
+    z-index: 100; }
+  .parties .party::after {
+    content: ' ';
+    position: absolute;
+    padding-bottom: 0;
+    border-radius: 50%;
+    z-index: 0;
+    background-color: #3D1255;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
 
 #senator-info {
   position: absolute;

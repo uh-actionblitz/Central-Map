@@ -92,7 +92,7 @@ class RepresentativeManager {
         <div class='basic-info'>
           <img src='${contactOfRep.image}' class='rep-pic' />
           <h5>NY District ${repToRender.district}</h5>
-          <h3>${repToRender.name}</h3>
+          <h4>${repToRender.name}</h4>
           <p>${this.renderParties(contactOfRep.party)}</p>
         </div>
         <div class='action-area'>
