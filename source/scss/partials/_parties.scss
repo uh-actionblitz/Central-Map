@@ -1,6 +1,7 @@
 .parties {
 
   .party {
+    position: relative;
     display: inline-block;
     padding: 5px 6px;
     border-radius: 40em;
@@ -10,11 +11,32 @@
     font-size: 12px;
     font-weight: bold;
 
-    &.D { background-color: #0172ce; }
+    &.D { &::after { background-color: #0172ce; } }
     &.IP { display: none; }
+    &.C, &.G, &.SC { display: none; }
     &.WF { display: none; }
-    &.R { background-color: #f1242b; }
-    &.IDC { background-color: #3D1255; }
+    &.R { &::after { background-color: #f1242b; } }
+    &.IDC {
+      &::after { background-color: #3D1255; }
+    }
 
+    & > span {
+      position: relative;
+      z-index: 100;
+    }
+    &::after {
+      content: ' ';
+      position: absolute;
+      padding-bottom: 0;
+      border-radius: 50%;
+      z-index: 0;
+      background-color: #3D1255;
+      width: 25px;
+      height: 25px;
+      padding: 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
