@@ -88,6 +88,47 @@ h4 {
 h5 {
   font-size: 14px; }
 
+#legend {
+  position: absolute;
+  bottom: 2px;
+  left: 0; }
+
+.user-popup-content hr {
+  border-color: #333; }
+
+.user-popup-content .user-info {
+  margin-bottom: 10px; }
+  .user-popup-content .user-info img.health-icon {
+    float: left;
+    margin-right: 5px; }
+
+.user-popup-content .user-feature {
+  margin-top: 10px; }
+
+.user-popup-content .user-image-container {
+  float: left;
+  width: 150px;
+  height: 100px;
+  margin-right: 5px;
+  margin-bottom: 5px; }
+  .user-popup-content .user-image-container div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center; }
+  .user-popup-content .user-image-container.no-image {
+    display: none; }
+
+.user-popup-content .user-video-container.no-video {
+  display: none; }
+
+.user-popup-content .user-story-text p {
+  margin: 0;
+  margin-bottom: 10px; }
+
+.user-popup-content .user-story-text.no-text {
+  display: none; }
+
 .senator-popup .leaflet-popup-tip-container {
   margin-top: -1px; }
 
